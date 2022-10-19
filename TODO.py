@@ -16,7 +16,14 @@ Ejercicio 3: Dada la matriz, [[1,2,3],[4,5,6],[7,8,9]], calcule el promedio de l
 """
 Ejercicio 4: Dada la siguiente lista ["Hola", "Amigos", "Hoy", True] , escriba un programa que pida al usuario una palabra, dicha palabra debe ser agregada al final y al inicio de la lista.
 """
-
+lista =["Hola", "Amigos", "Hoy", True]
+agregar=input('Ingrese un valor: ')
+ubicacion=input('precione "I" si quiere que la lista es al inicio o "F" si quiere que este al final ').upper()
+if ubicacion=='I':
+      inicio=lista.insert(0,agregar)
+else:      
+      ultimo=lista.append(agregar)
+print(lista)
 """
 Ejercicio 4
 Dada una lista de números enteros [15,20,50,80,40,60], escriba un programa que dado un dato por el usuario, este sea eliminado de la lista. Tome en cuenta que el usuario ingresará datos que se encuentran dentro de la lista
@@ -27,6 +34,11 @@ Ingrese el dato a eliminar: 60
 
 Salida: [15,20,50,80,40]
 """
+lista2=[15,20,50,80,40,60]
+eliminar=int(input('Ingrese un valor a eliminar: '))
+print(lista2)
+lista2.remove(eliminar)
+print(lista2)
 
 """
 Ejercicio 5
