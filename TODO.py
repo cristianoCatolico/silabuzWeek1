@@ -8,7 +8,15 @@ Ejercicio 2: Haga un programa en Python que le pida al usuario tantos enteros co
 el número de ocurrencias. Por ejemplo, si el usuario ingresa 4,4,8,4,9,7,7, la primera lista
 debe ser [4,8,9,7] y el segundo [3,1,1,2] 
 """
+matriz = [[1,2,3],[4,5,6],[7,8,9]]
+listadd=[]
+for i in range(len(matriz)):
+      listadd.append(matriz[i][i])
+      print (matriz[i][i])
 
+prom = sum(listadd)/len(matriz)
+
+print (f"El promedio es: {prom}")
 """
 Ejercicio 3: Dada la matriz, [[1,2,3],[4,5,6],[7,8,9]], calcule el promedio de la diagonal principal. Hint: Los 3 elementos de la diagonal son 1,5,9
 """
