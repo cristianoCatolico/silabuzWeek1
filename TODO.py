@@ -8,7 +8,23 @@ Ejercicio 2: Haga un programa en Python que le pida al usuario tantos enteros co
 el número de ocurrencias. Por ejemplo, si el usuario ingresa 4,4,8,4,9,7,7, la primera lista
 debe ser [4,8,9,7] y el segundo [3,1,1,2] 
 """
-
+import random
+num = int(input("¿Cuántos valores va a agregar?: "))
+list_01 = []
+list_02 = []
+list_03 = []
+for i in range(num):
+    value = int(input("Ingrese el valor entero: "))
+    list_01.append(value)
+for j in range(int(num/2+1)):
+    value = random.randint(0, 11)
+    list_02.append(value)
+for k in range(int(num/2+1)):
+    n = random.randint(0,num)
+    list_03.append(list_01[n])
+print("-"*40)
+print(list_03)
+print(list_02)
 """
 Ejercicio 3: Dada la matriz, [[1,2,3],[4,5,6],[7,8,9]], calcule el promedio de la diagonal principal. Hint: Los 3 elementos de la diagonal son 1,5,9
 """
