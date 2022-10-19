@@ -72,12 +72,18 @@ Ingrese una talla: 1.80
 
 Salida: Marcelo
 """
+height_p = {'Marcelo': 1.80, 'José':1.50, 'Oscar':1.70, 'Jorge': 1.40}
+
+tall_p = float(input('Ingrese una de las tallas de la persona que desea encontrar (1.80, 1.50, 1.70, 1.40): '))
+
+for key in height_p:
+    if tall_p == height_p.get((key),tall_p):
+        print("La talla le corresponde a",key)
 
 """
 Ejercicio 8
 Guarde los datos de una persona (nombre,apellido,edad) en un diccionario, luego imprimalo en el siguiente formato. "Hola mi nombre es [nombre] [apellido], y tengo [edad] años.
 """
-
 
 """
 """
