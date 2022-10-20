@@ -2,6 +2,14 @@
 Ejercicio 1: Hacer un programa que pida al usuario 5 nombres. Crear una lista con los 5 nombres. Despues hacer que muestre una frase los pronombres que empiezan con la letra A
 """
 
+nombre = []
+for i in range(0,5):
+    name = input(str(i)+" Ingrese los nombres:")
+    nombre.append(name)
+
+for i in nombre:
+    if i.startswith("a"):
+        print("Todos ellos son amigos de", i)
 
 """
 Ejercicio 2: Haga un programa en Python que le pida al usuario tantos enteros como quiera, luego cree dos listas, una con la lista de números propuestos y la otra con
@@ -16,7 +24,14 @@ Ejercicio 3: Dada la matriz, [[1,2,3],[4,5,6],[7,8,9]], calcule el promedio de l
 """
 Ejercicio 4: Dada la siguiente lista ["Hola", "Amigos", "Hoy", True] , escriba un programa que pida al usuario una palabra, dicha palabra debe ser agregada al final y al inicio de la lista.
 """
-
+lista =["Hola", "Amigos", "Hoy", True]
+agregar=input('Ingrese un valor: ')
+ubicacion=input('precione "I" si quiere que la lista es al inicio o "F" si quiere que este al final ').upper()
+if ubicacion=='I':
+      inicio=lista.insert(0,agregar)
+else:      
+      ultimo=lista.append(agregar)
+print(lista)
 """
 Ejercicio 4
 Dada una lista de números enteros [15,20,50,80,40,60], escriba un programa que dado un dato por el usuario, este sea eliminado de la lista. Tome en cuenta que el usuario ingresará datos que se encuentran dentro de la lista
@@ -27,6 +42,11 @@ Ingrese el dato a eliminar: 60
 
 Salida: [15,20,50,80,40]
 """
+lista2=[15,20,50,80,40,60]
+eliminar=int(input('Ingrese un valor a eliminar: '))
+print(lista2)
+lista2.remove(eliminar)
+print(lista2)
 
 """
 Ejercicio 5
@@ -60,6 +80,13 @@ Ingrese una talla: 1.80
 
 Salida: Marcelo
 """
+height_p = {'Marcelo': 1.80, 'José':1.50, 'Oscar':1.70, 'Jorge': 1.40}
+
+tall_p = float(input('Ingrese una de las tallas de la persona que desea encontrar (1.80, 1.50, 1.70, 1.40): '))
+
+for key in height_p:
+    if tall_p == height_p.get((key),tall_p):
+        print("La talla le corresponde a",key)
 
 """
 Ejercicio 8
